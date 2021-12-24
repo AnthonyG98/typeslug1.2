@@ -1,0 +1,32 @@
+@media only screen and (max-width: 600px) {
+       body {
+              height: auto ;
+       }
+       .login-container {
+              display: flex;
+              flex-direction: column;
+       }
+       .login-form-container {
+              margin-left: auto;
+              margin-right: auto;
+              display: flex;
+              flex-direction: column;
+       }
+       input {
+              margin-left: auto;
+              margin-right: auto;
+       }
+       label {
+              margin-left: 1em;
+       }
+       .login-btn {
+              width: 50%;
+              margin-left: 1em;
+       }
+       .sign-text {
+              margin-left: 1em;
+       }
+       .login-img {
+              width: 90%;
+       }
+     }

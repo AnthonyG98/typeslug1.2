@@ -1,0 +1,415 @@
+@font-face {
+       font-family: 'arvoregular';
+       src: url('fonts/arvo-regular-webfont.woff2') format('woff2'),
+            url('fonts/arvo-regular-webfont.woff') format('woff'),
+            url('fonts/arvo-regular-webfont.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+   
+   }
+body {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       overflow-x: hidden;
+       font-family: 'arvoregular';
+}
+.login{
+       display: flex;
+       width: 100%;
+       height: 100vh;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+.login-container {
+       width: 90%;
+       height: auto;
+       background-color: rgb(88, 199, 250);
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+}
+.login-img {
+       width: 50%;
+}
+.login-form-container {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       font-size: 2em;
+       color: rgb(255, 255, 255);
+}
+input {
+       width: 90%;
+       font-size: 1em;
+}
+.login-btn {
+       width: 25%;
+       font-size: 1em;
+       background-color: rgb(23, 89, 143);
+       color: #ffffff;
+       border: none;
+       margin-top: 1em;
+       border-radius: 25px;
+       cursor: pointer;
+       transition: 0.2s ease;
+
+}
+.login-btn:hover {
+       background-color: rgb(59, 146, 218);
+       transition: 0.2s ease;
+}
+.hey {
+       color: black;
+}
+.sign-link {
+       color: #ffffff;
+       transition: 0.2s ease;
+}
+.sign-link:hover {
+       color: rgb(74, 101, 218);
+       transition: 0.2s ease;
+
+}
+.new-user-container {
+       width: 100%;
+       height: 100vh;
+       position: fixed;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       top: 0;
+}
+.welcome-container {
+       width: 75%;
+       height: auto;
+       background-color: rgb(88, 153, 250);
+       color: #ffffff;
+       margin-left: auto;
+       margin-right: auto;
+       display: flex;
+       flex-direction: column;
+       font-family: 'arvoregular';
+       font-size: 2em;
+       text-align: center;
+}  
+.welcome-btn {
+       width: 15%;
+       font-size: 1em;
+       background-color: rgb(23, 89, 143);
+       color: #ffffff;
+       border: none;
+       margin-top: 1em;
+       border-radius: 25px;
+       cursor: pointer;
+       transition: 0.2s ease;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 2em;
+}    
+.welcome-btn:hover {
+       background-color: rgb(59, 146, 218);
+       transition: 0.2s ease;
+}
+.dash-props-container {
+       width: 100%;
+       height: auto;
+       margin-left: auto;
+       padding: 2em;       
+       border-bottom: 1px solid rgb(228, 228, 228);
+       overflow-x: hidden;
+
+}
+.dash-head {
+       width: auto;
+       display: flex;
+       flex-direction: row;
+}
+.username {
+       margin-left: 1em;
+       font-size: 2.25em;
+}
+.dash-text {
+       font-size: 1.5em;
+       color: rgb(104, 113, 133);
+}
+.profile-pic {
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       border: 1px solid rgb(23, 89, 143);
+       margin-right: auto;
+}
+.dash-links {
+       width: 100%;
+       height: auto;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+       justify-content: space-evenly;
+       margin-top: 1em;
+       /* position: fixed;
+       top: 0; */
+
+}
+.nav-container {
+       width: 100%;
+       height: auto;
+       display: flex;
+       flex-direction: row;
+       margin-left: auto;
+       justify-content: space-evenly;
+       align-items: center;
+       padding-top: 2em;
+       overflow-x: hidden;
+}
+.dash-link{
+       color: rgb(88, 153, 250);
+       text-decoration: none;
+       font-size: 2em;
+}
+.post-container {
+       width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: #ffffff;
+       
+}
+.post {
+       width: 99%;
+}
+.post-text {
+       width: 100%;
+       height: 5vh;
+       font-size: 2em;
+       resize: none;
+       border: 1px solid rgb(228, 228, 228);
+       transition: 0.2s ease;
+}
+.post-btn {
+       font-size: 2em;
+       margin-top: 0.25em;
+       margin-bottom: 0.25em;
+       background-color: rgb(88, 153, 250);
+       color: #ffffff;
+       border: none;
+       padding: 0.25em;
+       border-radius: 25px;
+       cursor: pointer;
+       transition: 0.2s ease;
+}
+.post-btn:hover {
+       background-color: rgb(74, 101, 218);
+       transition: 0.2s ease;
+}
+.profile-container {
+       width: 100%;
+       height: auto;
+       position: relative;
+}
+.profile-head-container {
+       width: 100%; 
+}
+.profile-header {
+       background-image: url("./images/banner.jpg");
+       width: 100%;
+       height: 50vh;
+       background-position: bottom;
+       background-repeat: no-repeat;
+       background-size: cover;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.profile-picture {
+       width: 300px;
+       height: 300px;
+       border: 3px solid rgb(88, 153, 250);
+       border-radius: 50%;
+       background-color: #ffffff;
+}
+
+.from-username {
+       font-weight: 400;
+       font-size: 2em;
+       line-height: 0em;
+}
+.search-container {
+       width: 100%;
+       display: flex;
+       flex-direction: row-reverse;
+       margin-top: 2em;
+}
+.props, .dash-props {
+       display: flex;
+       flex-direction: column-reverse;
+}
+.search-input {
+       width: 25%;
+       margin-right: 0.5em;
+}
+.fa-search {
+       color: rgb(23, 89, 143);
+       font-size: 2em;
+       padding-right: 2em;
+}
+#two {
+       font-size: 3em;
+}
+#search-two {
+       width: 25%;
+       margin-right: 2em;
+       font-size: 2em;
+}
+.err {
+       text-align: center;
+       font-size: 3em;
+       color: #adadad;
+}
+.results-container {
+       width: 50%;
+       height: auto;
+       top: 25%;
+       left: 50%;
+       background-color: rgb(23, 89, 143);
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-left: auto;
+       margin-top: 2em;
+       margin-right: 2em;
+}
+.results {
+       width: fit-content;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       margin-right: auto;
+       margin-left: 2em;
+}
+.results-img {
+       width: 75px;
+       height: 75px;
+       border-radius: 50%;
+       background-color: #e7e7e7;
+       margin-right: 1em;
+}
+.username-results {
+       color: #e7e7e7;
+       font-weight: 400;
+}
+.msg-btn {
+       background-color: rgb(97, 163, 216);
+       border: none;
+       font-size: 2em;
+       color: #fff;
+       cursor: pointer;
+}
+.chat-container {
+       width: 45%;
+       height: auto;
+       margin-left: auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+.chatbox {
+       width: 100%;
+}
+.chatbox-container {
+       width: 100%;
+       display: flex;
+}
+.chats-container {
+       width: 100%;
+       height: auto;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+       justify-content: flex-start;
+       border: 1px solid #e7e7e7;
+}
+.chat-img-container {
+       width: 25%;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: flex-start;
+}
+.chat-img {
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+}
+.chat-text-container {
+       width: 100%;
+       height: 6vh;
+       display: flex;
+       align-items: center;
+       border-left: 5px solid rgb(23, 89, 143);
+       margin-right: 2em;
+}
+.chat-text {
+       width: 100%;
+       text-align: right;
+       margin-left: auto;
+       font-size: 1.5em;
+       overflow-x: hidden;
+}
+.chat-user {
+       width: 15vh;
+       font-size: 1.5em;
+       line-height: 0
+}
+.chatlog-container {
+       width: 100%;
+       height: fit-content;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       position: relative;
+       border-bottom: 1px solid #e7e7e7;
+}
+.state {
+       width: 50%;
+       
+
+}
+.chat-overflow {
+       width: 100%;
+       overflow-y: scroll;
+       display: flex;
+       flex-direction: column;
+       height: 50vh;
+}
+.div {
+       width: 100%;
+}
+.states {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+}
+.from-container {
+       display: flex;
+       flex-direction: row;
+}
+.statess {
+       display: flex;
+}
+.chat-btn {
+       background-color: rgb(23, 89, 143);
+       border: transparent;
+       width: 15%;
+       font-size: 2em;
+       color: white;
+}
+.chat-textarea {
+       width: 100%;
+       resize: none;
+}
